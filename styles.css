@@ -1,0 +1,125 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #444444;
+    margin: 0; 
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column;
+}
+
+#text-container {
+    width: 600px;
+}
+
+#quiz-container {
+    flex: 1;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #444444;
+    position: relative;
+}
+
+#image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    margin-bottom: 20px; 
+    position: relative;
+    display: inline-block;
+}
+
+#question-image {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down; 
+}
+
+#character-name{
+    font-size: 45px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 40px; 
+    left: 0; 
+    width: 100%; 
+    text-align: center;
+    color: white; 
+    text-shadow: 
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000, 
+    2px 2px 0 #000; 
+}
+
+#character-from{
+    font-size: 18px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 20px; 
+    left: 0; 
+    width: 100%; 
+    text-align: center;
+    color: white; 
+    text-shadow: 
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000, 
+    2px 2px 0 #000; 
+}
+
+#question-image {
+    width: 100%; 
+    height: auto;
+    max-height: 600px; 
+}
+
+.chibi-button-image {
+    height: 150px;
+    width: auto;
+    transition: filter 0.3s;
+}
+.chibi-button:hover .chibi-button-image {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5)); 
+}
+
+.btn-container {
+    margin-top: 40px;
+    margin: 0 auto;
+}
+
+.chibi-button{
+    flex: 1; 
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+
+.btn {
+    flex: 1; 
+    margin: 0 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0e2c4dea;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: #001a36;
+}
+
+#result-container { 
+    font-size: 70px;
+    color: #fff;
+    text-align: center;
+}
+
+.player-image {
+    width: 600px;
+    margin: 0 10px; 
+    transition: filter 0.3s;
+}

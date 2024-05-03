@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fufu and Mother Furry Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="image-container">
+            <img id="question-image" src="" alt="Question Image">
+            <div id="text-container">
+                <div id="character-name"></div>
+                <div id="character-from"></div>
+            </div>
+        </div>
+    </div>
+    <div id="result-container" style="display: none;">
+        <p id="result-text">hello</p>
+        <div class="chibi-container">
+            <img class="player-image" src="images/chibi/fufu_wink.png" alt="Fufu Image">    
+            <img class="player-image" src="images/chibi/mother_wink.png" alt="Mother Image">
+        </div>
+        
+        <button class="btn" onclick="restartQuiz()">Restart Quiz</button>
+        <button class="btn" onclick="characterSelect()">Change Character</button>
+    </div>
+    <div id="answer-buttons" class="btn-container">
+        <button class="chibi-button" onclick="selectAnswer('loved')"><img class="chibi-button-image" id="loved" src="" alt="Loved"></button>
+        <button class="chibi-button" onclick="selectAnswer('neutral')"><img class="chibi-button-image" id="neutral" src="" alt="Neutral"></button>
+        <button class="chibi-button" onclick="selectAnswer('hated')"><img class="chibi-button-image" id="hated" src="" alt="Hated"></button>
+    </div>
+    
+    <script src="quiz.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
